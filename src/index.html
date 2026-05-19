@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pt">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Título exibido na aba do navegador -->
     <title>Desenvolvedor</title>
 
@@ -14,8 +16,20 @@
       <nav class="container">
         <div class="logo">PH</div>
 
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <!-- Links de navegação da página -->
-        <ul class="nav-links">
+        <ul class="nav-links" id="menu-principal">
           <li><a href="#sobre"> Sobre </a></li>
           <li><a href="#skills"> Skills </a></li>
           <li><a href="#projetos"> Projetos </a></li>
@@ -170,5 +184,7 @@
         <p>&copy; 2026 Pedro Herinque. Todos os direitos reservados.</p>
       </footer>
     </main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
