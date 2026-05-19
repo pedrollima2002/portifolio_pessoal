@@ -17,6 +17,10 @@
   --transicao: all 0.3s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--fonte);
 }
@@ -61,6 +65,10 @@ header .logo {
 .nav-links {
   display: flex;
   list-style: none;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 .nav-links li {
@@ -137,8 +145,7 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 320px);
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
@@ -162,8 +169,7 @@ section {
 
 .projeto-grid {
   display: grid;
-  grid-template-columns: repeat(3, 320px);
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
@@ -203,7 +209,7 @@ section {
 
 #projetos,
 #skills {
-  margin: 100px 0;
+  margin: 100px auto;
   text-align: center;
 }
 
@@ -278,13 +284,148 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem;
+    width: auto;
+  }
+
+  .menu-toggle span {
+    background-color: var(--cor-de-texto);
+    border-radius: 999px;
+    display: block;
+    height: 3px;
+    transition: var(--transicao);
+    width: 28px;
+  }
+
+  .menu-toggle.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {
+    background-color: var(--cor-de-fundo-card);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    left: 1.5rem;
+    padding: 1rem;
+    position: absolute;
+    right: 1.5rem;
+    text-align: center;
+    top: 80px;
+  }
+
+  .nav-links.ativo {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.75rem;
+  }
+
+  main {
+    margin-top: 5rem;
+  }
+
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  .dev {
+    padding: 4rem 0;
+  }
+
   .dev-container {
     grid-template-columns: 1fr;
     gap: 2.5rem;
     text-align: center;
   }
 
+  .dev-texto h1 {
+    font-size: 2.5rem;
+  }
+
+  .dev-texto p {
+    font-size: 1.1rem;
+  }
+
   .dev-imagem {
     justify-content: center;
+  }
+
+  .imagem-perfil {
+    max-width: 320px;
+  }
+
+  #projetos,
+  #skills {
+    margin: 60px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .dev {
+    padding: 3rem 0;
+  }
+
+  .dev-texto h1 {
+    font-size: 2rem;
+  }
+
+  .skills-grid,
+  .projeto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .botao-de-contato,
+  button {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: flex;
+    width: auto;
   }
 }
