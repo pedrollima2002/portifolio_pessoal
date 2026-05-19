@@ -86,9 +86,13 @@ section {
 }
 
 .dev {
+  padding: 6rem 0;
+}
+
+.dev-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
 }
 
@@ -117,6 +121,8 @@ section {
 }
 
 .dev-imagem {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -269,4 +275,16 @@ footer {
 
 .fade-in {
   animation: fade 1s ease-out;
+}
+
+@media (max-width: 768px) {
+  .dev-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .dev-imagem {
+    justify-content: center;
+  }
 }
