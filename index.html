@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+
+        <!-- Título exibido na aba do navegador -->
+        <title> Desenvolvedor </title>
+
+        <!-- Arquivo CSS principal -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <!-- Cabeçalho e menu de navegação -->
+        <header>
+            <nav class="container">
+                <div class="logo"> PH </div>
+
+                <!-- Links de navegação da página -->
+                <UL class="nav-links">
+                    <li> <a href="#sobre"> Sobre </a> </li>
+                    <li> <a href="#skills"> Skills </a> </li>
+                    <li> <a href="#projetos"> Projetos </a> </li>
+                    <li> <a href="#contato"> Contato </a> </li>
+                </UL>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- Seção principal de apresentação -->
+            <section id="sobre" class="dev container fade-in">
+                <div class="dev-texto">
+                    <h1> Pedro Henrique </h1>
+
+                    <p> Formado em Gestão de T.I., dando os primeiros passos no desenvolvimento e construindo minhas habilidades na prática. </p>
+
+                    <a class="botao-de-contato" href="#contato"> Entre em contato </a>                        
+                </div>
+
+                <!-- Imagem de perfil -->
+                <div class="dev-imagem">
+                    <img src="img/dude.png" class="imagem-perfil">
+                </div>
+            </section>
+            
+            <!-- Seção de habilidades -->
+            <section id="skills" class="container fade-in">
+                <h2> Skills </h2>
+
+                <div class="skills-grid">
+
+                    <!-- Skill Frontend -->
+                    <div class="skills-item">
+                        <div class="skill-icon">&#128187;</div>
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, JavaScript, React</p>
+                    </div>
+
+                    <!-- Skill Backend -->
+                    <div class="skills-item">
+                        <div class="skill-icon">&#128295;</div>
+                        <h3>Backend</h3>
+                        <p>Python</p>
+                    </div>
+
+                    <!-- Ferramentas -->
+                    <div class="skills-item">
+                        <div class="skill-icon">&#128736;</div>
+                        <h3>Ferramentas</h3>
+                        <p>Git, Docker</p>
+                    </div>
+                    
+                </div> 
+            </section>
+            
+            <!-- Seção de projetos -->
+
+            <section id="projetos" class="container fade-in">
+                <h2> Projetos </h2>
+
+                <div class="projeto-grid">
+
+                <!-- Projeto 1 -->
+                <a href="https://github.com/pedrollima2002/automacao-de-estoque"
+                    target="_blank"
+                    class="projeto-card">
+                
+                    <h3 class="titulo-projeto">Automação de Cadastro com PyAutoGUI</h3>
+
+            <p>
+                Sistema de automação desenvolvido em Python para realizar cadastro automático
+                de produtos em uma plataforma web, utilizando controle de teclado, mouse
+                e integração com base de dados CSV.
+            </p>
+
+            <div class="projeto-tags">
+                <span> Python </span>
+                <span> PyAutoGUI </span>
+                <span> Pandas </span>
+            </div>
+                </a>
+
+        <!-- Projeto 2 -->
+        <a href="https://github.com/pedrollima2002/ANALISE-DE-CANCELAMENTO" target="_blank" class="projeto-card">
+            <h3 class="titulo-projeto">Análise de Dados</h3>
+
+            <p>
+                Projeto de análise exploratória de dados utilizando Python para tratamento,
+                organização e visualização de informações, gerando insights estratégicos
+                através de gráficos e métricas.
+            </p>
+
+            <div class="projeto-tags">
+                <span> Python </span>
+                <span> Pandas </span>
+                <span> Matplotlib </span>
+            </div>
+        </a>
+
+        <!-- Projeto 3 -->
+        <a href="https://github.com/pedrollima2002/previsao-com-machine-learning" target="_blank" class="projeto-card">
+            <h3 class="titulo-projeto">Previsão com Machine Learning</h3>
+
+            <p>
+                Modelo preditivo desenvolvido com técnicas de Machine Learning para análise
+                de padrões e realização de previsões a partir de conjuntos de dados,
+                utilizando treinamento e validação de modelos.
+            </p>
+
+            <div class="projeto-tags">
+                <span> Python </span>
+                <span> Scikit-Learn </span>
+                <span> Machine Learning </span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+            <!-- Seção de contato -->
+            <section id="contato" class="contato fade-in">
+
+                <h2 class="titulo-contato"> Contate-me </h2>
+
+                <!-- Formulário de contato -->
+                <form 
+                    class="contato-form"
+                    action="https://formspree.io/f/xnjwekrn"
+                    method="POST"
+                >
+
+                    <div class="grupo-formulario">
+                        <label> Nome </label>
+                        <input id="nome" name="nome" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="email"> Email </label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mensagem"> Mensagem </label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit"> Mandar mensagem </button>
+                </form>
+                
+            </section>
+
+            <!-- Rodapé -->
+            <footer>
+
+                <!-- Ícones do footer -->
+                <ul class="icones-footer">
+                    <li>&#128187;</li>
+                    <li>&#128101;</li>
+                    <li>&#128038;</li>
+                </ul>
+
+                <p>&copy; 2026 Pedro Henrique. Todos os direitos reservados.</p>
+            </footer>
+
+        </main>
+    </body>
+</html>
