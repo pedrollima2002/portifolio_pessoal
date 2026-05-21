@@ -1,27 +1,43 @@
-# Portfólio Pessoal
+# 🌐 Portfólio Pessoal
 
-Projeto de portfólio pessoal desenvolvido com HTML e CSS para apresentar minhas habilidades, projetos e informações de contato.
+Projeto desenvolvido para apresentar minhas habilidades, projetos e evolução como desenvolvedor.
 
-## Tecnologias Utilizadas
-- HTML5
-- CSS3
+---
 
-## Funcionalidades
-- Menu de navegação
-- Seção sobre mim
-- Área de skills
-- Cards de projetos
-- Formulário de contato
+## 🚀 Tecnologias utilizadas
+
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## 📸 Preview
+
+<img width="1424" height="844" alt="Captura de tela 2026-05-16 114718" src="https://github.com/user-attachments/assets/20b30734-0221-4056-8507-b951e83ed7bf" />
+
+
+---
+
+## 🎯 Funcionalidades
+
+- Apresentação pessoal
+- Sessão de projetos
 - Layout responsivo
-- Animações visuais
+- Contato
 
-## Estrutura do Projeto
+---
 
-```bash
-portifolio/
-├── index.html
-├── styles.css
-├── README.md
-├── .gitignore
-└── img/
-    └── dude.png
+## 🔗 Deploy
+
+https://pedrollima2002.github.io/portifolio_pessoal/#contato
+
+---
+
+## 📚 Aprendizados
+
+Nesse projeto pratiquei:
+- Estruturação de páginas
+- Responsividade
+- Organização de layout
+- Publicação de projetos
