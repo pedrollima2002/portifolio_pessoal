@@ -1,43 +1,28 @@
-# 🌐 Portfólio Pessoal
+# Portfólio — Pedro Henrique Lima
 
-Projeto desenvolvido para apresentar minhas habilidades, projetos e evolução como desenvolvedor.
+[Abrir portfólio publicado](https://pedrollima2002.github.io/portifolio_pessoal/)
 
----
+Portfólio profissional voltado a oportunidades de desenvolvimento júnior, automação, dados e suporte técnico. A página apresenta somente projetos concluídos e documentados, com acesso separado para demonstrações, estudos e código-fonte.
 
-## 🚀 Tecnologias utilizadas
+## Projetos apresentados
 
-- HTML
-- CSS
-- JavaScript
+- **Controle de Estoque RPG Multimarcas:** aplicação web autenticada com Supabase, histórico auditável e conferência física.
+- **Análise de Cancelamento:** estudo reproduzível em Python e Pandas sobre uma base educacional de 48.527 registros tratados.
+- **Automação de Cadastro:** automação com PyAutoGUI estruturada com simulação segura, validações, logs, retomada e testes.
 
----
+O Catálogo RPG não faz parte do portfólio porque seu desenvolvimento foi cancelado.
 
-## 📸 Preview
+## Tecnologias do site
 
-<img width="1424" height="844" alt="Captura de tela 2026-05-16 114718" src="https://github.com/user-attachments/assets/20b30734-0221-4056-8507-b951e83ed7bf" />
+- HTML5 semântico;
+- CSS3 responsivo;
+- JavaScript nativo;
+- GitHub Pages.
 
+## Execução local
 
----
+```powershell
+python -m http.server 5500
+```
 
-## 🎯 Funcionalidades
-
-- Apresentação pessoal
-- Sessão de projetos
-- Layout responsivo
-- Contato
-
----
-
-## 🔗 Deploy
-
-https://pedrollima2002.github.io/portifolio_pessoal/#contato
-
----
-
-## 📚 Aprendizados
-
-Nesse projeto pratiquei:
-- Estruturação de páginas
-- Responsividade
-- Organização de layout
-- Publicação de projetos
+Depois, acesse `http://localhost:5500`.
