@@ -47,5 +47,7 @@ for src, alt in parser.images:
 text = HTML.read_text(encoding="utf-8").lower()
 if "catalogo-rpg" in text or "catálogo rpg" in text:
     raise SystemExit("O projeto cancelado não deve aparecer na página pública.")
+if "conclusão prevista" in text or "formado em gestão da tecnologia da informação" not in text:
+    raise SystemExit("A formação deve constar como concluída em 2025.")
 
 print(f"Validação concluída: {len(parser.links)} links, {len(parser.images)} imagens e {len(parser.ids)} IDs.")
