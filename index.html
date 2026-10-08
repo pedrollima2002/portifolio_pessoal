@@ -2,11 +2,15 @@
 <html lang="pt">
     <head>
 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio de Pedro Henrique, desenvolvedor em início de carreira com projetos em JavaScript, Python e Supabase.">
+
         <!-- Título exibido na aba do navegador -->
-        <title> Desenvolvedor </title>
+        <title>Pedro Henrique | Desenvolvedor</title>
 
         <!-- Arquivo CSS principal -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css?v=20261008">
     </head>
 
     <body>
@@ -33,14 +37,14 @@
                 <div class="dev-texto">
                     <h1> Pedro Henrique </h1>
 
-                    <p> Formado em Gestão de T.I., dando os primeiros passos no desenvolvimento e construindo minhas habilidades na prática. </p>
+                    <p> Desenvolvedor em início de carreira, criando soluções práticas com JavaScript, Python e Supabase. </p>
 
                     <a class="botao-de-contato" href="#contato"> Entre em contato </a>                        
                 </div>
 
                 <!-- Imagem de perfil -->
                 <div class="dev-imagem">
-                    <img src="src/img/dude.png" class="imagem-perfil">
+                    <img src="src/img/dude.png" class="imagem-perfil" alt="Ilustração de uma pessoa desenvolvendo software">
                 </div>
             </section>
             
@@ -54,21 +58,21 @@
                     <div class="skills-item">
                         <div class="skill-icon">&#128187;</div>
                         <h3>Frontend</h3>
-                        <p>HTML, CSS, JavaScript, React</p>
+                        <p>HTML, CSS e JavaScript</p>
                     </div>
 
                     <!-- Skill Backend -->
                     <div class="skills-item">
                         <div class="skill-icon">&#128295;</div>
-                        <h3>Backend</h3>
-                        <p>Python</p>
+                        <h3>Python e dados</h3>
+                        <p>Python, Pandas e Plotly</p>
                     </div>
 
                     <!-- Ferramentas -->
                     <div class="skills-item">
                         <div class="skill-icon">&#128736;</div>
                         <h3>Ferramentas</h3>
-                        <p>Git, Docker</p>
+                        <p>Git, GitHub, Supabase e Jupyter Notebook</p>
                     </div>
                     
                 </div> 
@@ -82,56 +86,54 @@
                 <div class="projeto-grid">
 
                 <!-- Projeto 1 -->
-                <a href="https://github.com/pedrollima2002/automacao-de-estoque"
+                <a href="https://github.com/pedrollima2002/estoque-rpg"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="projeto-card">
                 
-                    <h3 class="titulo-projeto">Automação de Cadastro com PyAutoGUI</h3>
+                    <h3 class="titulo-projeto">Controle de Estoque RPG Multimarcas</h3>
 
             <p>
-                Sistema de automação desenvolvido em Python para realizar cadastro automático
-                de produtos em uma plataforma web, utilizando controle de teclado, mouse
-                e integração com base de dados CSV.
+                Sistema web para controle de estoque com autenticação, cadastro de produtos,
+                histórico de movimentações e atualização em tempo real.
+            </p>
+
+            <div class="projeto-tags">
+                <span> JavaScript </span>
+                <span> Supabase </span>
+                <span> GitHub Pages </span>
+            </div>
+                </a>
+
+        <!-- Projeto 2 -->
+        <a href="https://github.com/pedrollima2002/analise-de-cancelamento" target="_blank" rel="noopener noreferrer" class="projeto-card">
+            <h3 class="titulo-projeto">Análise de Cancelamento de Clientes</h3>
+
+            <p>
+                Estudo exploratório em Python para tratar dados e investigar padrões
+                associados ao cancelamento de clientes.
+            </p>
+
+            <div class="projeto-tags">
+                <span> Python </span>
+                <span> Pandas </span>
+                <span> Plotly </span>
+            </div>
+        </a>
+
+        <!-- Projeto 3 -->
+        <a href="https://github.com/pedrollima2002/automacao-de-estoque" target="_blank" rel="noopener noreferrer" class="projeto-card">
+            <h3 class="titulo-projeto">Automação de Cadastro com PyAutoGUI</h3>
+
+            <p>
+                Projeto de estudo que lê produtos de um arquivo CSV e automatiza o
+                preenchimento de um sistema web usando teclado e mouse.
             </p>
 
             <div class="projeto-tags">
                 <span> Python </span>
                 <span> PyAutoGUI </span>
                 <span> Pandas </span>
-            </div>
-                </a>
-
-        <!-- Projeto 2 -->
-        <a href="https://github.com/pedrollima2002/ANALISE-DE-CANCELAMENTO" target="_blank" class="projeto-card">
-            <h3 class="titulo-projeto">Análise de Dados</h3>
-
-            <p>
-                Projeto de análise exploratória de dados utilizando Python para tratamento,
-                organização e visualização de informações, gerando insights estratégicos
-                através de gráficos e métricas.
-            </p>
-
-            <div class="projeto-tags">
-                <span> Python </span>
-                <span> Pandas </span>
-                <span> Matplotlib </span>
-            </div>
-        </a>
-
-        <!-- Projeto 3 -->
-        <a href="https://github.com/pedrollima2002/previsao-com-machine-learning" target="_blank" class="projeto-card">
-            <h3 class="titulo-projeto">Previsão com Machine Learning</h3>
-
-            <p>
-                Modelo preditivo desenvolvido com técnicas de Machine Learning para análise
-                de padrões e realização de previsões a partir de conjuntos de dados,
-                utilizando treinamento e validação de modelos.
-            </p>
-
-            <div class="projeto-tags">
-                <span> Python </span>
-                <span> Scikit-Learn </span>
-                <span> Machine Learning </span>
             </div>
         </a>
 
